@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.2.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.2.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style media="screen">
+      @media (max-width: 600px) {
+      }
+      #dialog{
+            animation: slide-up 0.4s ease;
+        }
+        @keyframes slide-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+  </head>
+  <body class="text-center">
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Navbar</a>
+      <form class="form-inline">
+        <a href="#"class="btn btn-outline-success my-2 my-sm-0"  id="login">Login</a>
+      </form>
+    </nav>
+    <p id="load">Connecting...</p>
+      <main>
+        <section>
+            <div class="card m-auto" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id = "userId">User 001</h5>
+                  <p class="card-text" id ="thing">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button  class="btn btn-outline-primary m-1" id="like"><span id ="n-like"></span> Like</a>
+                  <button  class="btn btn-outline-primary m-1" id="dislike"><span id ="n-dislike"></span> Dislike</a>
+                  <button  class="btn btn-outline-primary m-1" id="next">Next</a>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="card m-auto" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Send new thing</h5>
+                  <textarea name="new-thing" id="new-thing" cols="30" rows="6"></textarea>
+                  <button  class="btn btn-outline-primary m-1" id="send">Send</button>
+                </div>
+              </div>
+        </section>
+      </main>
+      <section>
+          <div class="collapse fixed-top" tabindex="-1" role="dialog" id="dialog"> 
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">New post</h5>
+                    <button type="button" class="close-mod close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-mod">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+<script defer src="index.js"></script>
+  </body>
+</html>
