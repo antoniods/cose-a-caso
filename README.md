@@ -1,2 +1,2 @@
 # cose-a-caso
-Theme design for italian app 
+Theme design for an italian app 
