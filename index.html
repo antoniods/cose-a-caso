@@ -13,7 +13,9 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <style media="screen">
       @media (max-width: 600px) {
@@ -35,10 +37,11 @@
   </head>
   <body class="text-center">
   <!-- Image and text -->
-  <nav class="navbar navbar-light bg-light">
+ 	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
       <a class="navbar-brand">Navbar</a>
       <form class="form-inline">
-        <a href="#"class="btn btn-outline-success my-2 my-sm-0"  id="login">Login</a>
+        <a href="#"class="btn btn-outline-primary my-2 my-sm-0"  id="login">Login</a>
       </form>
     </nav>
     <p id="load">Connecting...</p>
@@ -84,6 +87,27 @@
               </div>
             </div>
       </section>
-<script defer src="index.js"></script>
+
+      <section>
+       
+      	<div class="container-fluid fixed-bottom" style="background-color: #e3f2fd;">
+			<!-- Links -->
+			<!-- <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+				<div class="navbar navbar-expand-lg">   
+					<ul class="navbar-nav ">
+						<li class="nav-item"> -->
+					<div class="px-5 py-3 navbar" style="text-align: center;">
+					  <a href="#">Home</a>
+					  <a href="#">A caso</a>
+					  <a href="#">Moderare</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</section>
+
+<script defer src="/js/index.js"></script>
+<!-- Initialize Bootstrap functionality -->
   </body>
 </html>
